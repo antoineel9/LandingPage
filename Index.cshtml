@@ -1,0 +1,114 @@
+﻿@page
+@model IndexModel
+@{
+
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class=" text-center ">
+    <h1>NOW WHAT INC</h1>
+    <h2>UPLIFT-EDUCATE-INSPIRE</h2>
+
+
+</div>
+
+@if (User.IsInRole("admin"))
+{
+    <section>
+        <h5 style="color:blue">Welcome, Admin!</h5>
+    </section>
+}else
+{
+    <section>
+        <h5 style="color:blue">Welcome,Guest</h5>
+    </section>
+}
+<style>
+    body {
+        background-image: url()
+    }
+
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+    }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+</style>
+
+
+<h3 style="color:red"> Mission Statement</h3>
+<p> At NOW WHAT INC, our mission is to Uplift, Educate, and Inspire men and women through educational and vocational training, appropriate resources, and unconditional support.</p>
+
+<img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-0/p640x640/48360960_10218321614536925_3976616425870589952_o.jpg?_nc_cat=101&amp;_nc_sid=8024bb&amp;_nc_ohc=oL8U0HqH3QYAX-F08TZ&amp;_nc_ht=scontent-ort2-1.xx&amp;_nc_tp=6&amp;oh=1510f71a4181aa3eacc7cca2f85a09a1&amp;oe=5EAA2A1E" alt="Image may contain: 17 people, including Michael Martinez, people smiling" />
+
+
+<iframe width="560" height="315" src="https://youtube.com/embed/9aocJ_9nSyQ?list=PLRC91B5CXTXpOADyujeZLttajJljZz2CP" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<h4 style="color:red">Community Service</h4>
+<p> On my way to (RYOCF)Racine Correctional Facility <a href="https://www.youtube.com/embed/DH49_c6cF60">Listen Up</a></p>
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+
+            <h3 style="color:red">Uplift</h3>
+            <p>
+                to lift up; raise; elevate.
+                to improve socially, culturally, morally, or the like
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h3 style="color:red">Educate</h3>
+
+            <p>
+                to develop the faculties and powers of (a person) by teaching, instruction, or schooling.
+                to qualify by instruction or training for a particular calling, practice, etc.; train:
+                to educate someone for law.
+                to provide schooling or training for; send to school.
+                to develop or train (the ear, taste, etc.):
+                to educate one's palate to appreciate fine food.
+                to inform:
+                to educate oneself about the best course of action.
+        </div>
+        <div class="col-sm-4">
+            <h3 style="color:red">Inspire</h3>
+            <p>
+                to fill with an animating, quickening, or exalting influence:
+                to produce or arouse (a feeling, thought, etc.):
+                to inspire confidence in others.
+                to fill or affect with a specified feeling, thought, etc.:
+                to inspire a person with distrust.
+                to influence or impel:
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+

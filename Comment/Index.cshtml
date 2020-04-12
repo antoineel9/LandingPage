@@ -1,0 +1,53 @@
+﻿@page
+@model NWI2.IndexModel1
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+<p>What are you made of?Find out by taking th <a href="https://www.123test.com/disc-personality-tesa">D I S C Assessment</a></p>
+<p> What exactly is <a href="https://www.thoughtco.com/maslow-theory-self-actualization-4169662">Maslow's Theory</a></p>
+
+<h1>Profile</h1>
+
+<p>
+    <a asp-page="Create">Leave a comment</a>
+    <table class="table">
+        <thead>>
+</p>
+<tr>
+    <th>
+    <th></th>
+</tr>
+    </thead>
+<tbody>
+
+    <aside class="grid-container">
+        @foreach (var item in Model.GED)
+        {
+            <aside class="grid-item">
+
+                @item.STUDENTINFO|@item.EMPLOYED|@item.LOCATION|
+                <a asp-page="./Edit" asp-route-id="@item.VID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.VID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.VID">Delete</a>
+            </aside>
+
+        }
+</tbody>
